@@ -12,7 +12,5 @@ USER prometheus
 # Command untuk menjalankan prometheus
 CMD ["--config.file=/etc/prometheus/prometheus.yml", \
      "--storage.tsdb.path=/prometheus", \
-     "--web.console.libraries=/etc/prometheus/console_libraries", \
-     "--web.console.templates=/etc/prometheus/consoles", \
-     "--storage.tsdb.retention.time=200h", \
-     "--web.enable-lifecycle"]
+     "--web.console.libraries=/usr/share/prometheus/console_libraries", \
+     "--web.console.templates=/usr/share/prometheus/consoles"]
